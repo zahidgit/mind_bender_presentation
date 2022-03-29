@@ -1,12 +1,16 @@
 package com.amazonPageAction;
 
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.amazonPageElements.AmazonLoginPageElements;
 import com.amazoUtilities.SetupDriver;
 
 
 public class AmazonLOginPageAction {
+	
 	AmazonLoginPageElements pageElement;
 	
 	public AmazonLOginPageAction() {
@@ -31,6 +35,13 @@ public class AmazonLOginPageAction {
 	public void clickContinue() {
 		pageElement.clickContinue.click();
 	}
+	
+	
+	@FindBy(id = "ap_email")
+	public WebElement userId;
+	
+	@FindBy(xpath ="//*[@id=\"continue\"]")
+	public WebElement clickContinue;
 
 
 	public void inputPassword(String password) {

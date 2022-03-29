@@ -11,17 +11,17 @@ public class AmazonLoginRunner {
 	@CucumberOptions(plugin = { "pretty", "html:target/cucumber", "json:target/cucumber-json.json" }, features = {
 	"src/test/resources/Features" }, glue = { "com.amazonStepDefinition" }, tags = { "@chrome", }, monochrome = true)
 
-public class RunCucumberTest extends AbstractTestNGCucumberTests {
+					public class RunCucumberTest extends AbstractTestNGCucumberTests {
 
-@BeforeTest
-public void beforeTest() {
-	System.out.println("... Test STarted ...");
-}
+						@BeforeTest
+									public void beforeTest() {
+									System.out.println("... Test STarted ...");
+									}
 
-@AfterTest
-public void afterTest() {
-	System.out.println("... Test Completed ...");
-}
-}
+						@AfterTest
+							public void afterTest() {
+									System.out.println("... Test Completed ...");
+									}
+									}
 
-}
+									}
