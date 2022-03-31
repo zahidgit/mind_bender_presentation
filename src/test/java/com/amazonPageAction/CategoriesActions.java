@@ -12,7 +12,7 @@ import com.amazonPageElements.CategoriesElements;
 
 public class CategoriesActions {
  
-	
+	 
 
 	CategoriesElements CatElements = new CategoriesElements();
 	

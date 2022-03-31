@@ -1,4 +1,4 @@
-@chrome
+@chrome 
 Feature: Amazon Home to cart page
   This Feature will test if we can navigate from Amazon home page to cart
 

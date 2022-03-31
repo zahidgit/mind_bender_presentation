@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.amazoUtilities.SetupDriver;
 import com.amazonPageElements.AmazonPagetoCartElements;
 
-
+ 
 public class AmazonPagetoCartActions {
 
 	AmazonPagetoCartElements cartElements;                               	// create instance variable

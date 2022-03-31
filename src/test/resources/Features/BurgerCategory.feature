@@ -1,4 +1,4 @@
-@chrome @sanity @regression
+@chrome @sanity @regression 
 Feature: Burger Menu button to Categories Funtionality
 
   Scenario: Navigate from Burger Menu to a Specific Category

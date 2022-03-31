@@ -1,4 +1,4 @@
-@chrome @sanity @regression
+@chrome @sanity @regression 
 Feature: Categories Funtionality
 
   Scenario: From Side Menu to a Specific Category

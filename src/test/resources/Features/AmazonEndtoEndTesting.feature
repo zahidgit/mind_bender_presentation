@@ -1,6 +1,6 @@
-@chrome @sanity @regression
+@chrome @sanity @regression 
 Feature: Amazon User End to End Testing
-  This is an End to End Test for this Feature
+  This is an End to End Test for this Feature 
 
   Scenario: User completes order with End to End Testing
     Given User is on amazon login page

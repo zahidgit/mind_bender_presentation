@@ -6,7 +6,7 @@ import org.openqa.selenium.TakesScreenshot;
 import com.amazoUtilities.SetupDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
-
+ 
 public class AfterScenario {
 	@After
 	public void afterChromeScenario(Scenario scen) {

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class CategoriesElements {
-
+ 
 	
 		@FindBy(css = "#nav-hamburger-menu")
 		public WebElement BurgerMenu;

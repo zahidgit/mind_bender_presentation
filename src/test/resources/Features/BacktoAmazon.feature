@@ -1,4 +1,4 @@
-@chrome @sanity
+@chrome @sanity 
 Feature: Back to Amazon Home
 
   Scenario: Title of your scenario

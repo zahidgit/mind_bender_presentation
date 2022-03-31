@@ -12,7 +12,7 @@ public class AmazonEndtoEndTestingActions {
 	
 	
 
-	AmazonEndtoEndTestingElements e2etestElement;           						 			//import elements class, created instance variable
+	AmazonEndtoEndTestingElements e2etestElement;           						 			//import  elements class, created instance variable
 	
 		public AmazonEndtoEndTestingActions() {													//create a constructor				  
 			e2etestElement = new AmazonEndtoEndTestingElements();								//initialize instance variable

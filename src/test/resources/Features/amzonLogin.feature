@@ -1,4 +1,4 @@
-@chrome 
+@chrome  
 Feature: Amazon login feature
   This feature will test amazon login features
   

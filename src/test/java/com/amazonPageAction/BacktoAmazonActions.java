@@ -9,7 +9,7 @@ import com.amazonPageElements.BacktoAmazonElements;
 
 public class BacktoAmazonActions {
 
-				
+			 	
 				
 	BacktoAmazonElements NavigateBack;           						 							//import elements class, created instance variable
 	
