@@ -1,6 +1,7 @@
 package com.amazonStepDefinition;
 
-import com.amazoUtilities.SetupDriver;
+import com.amazonUtilities.SetupDriver;
+
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 

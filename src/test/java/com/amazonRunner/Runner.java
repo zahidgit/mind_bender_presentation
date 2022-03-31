@@ -6,10 +6,12 @@ import org.testng.annotations.BeforeTest;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-public class AmazonLoginRunner {
+public class Runner {
 	
-	@CucumberOptions(plugin = { "pretty", "html:target/cucumber", "json:target/cucumber-json.json" }, features = {
-	"src/test/resources/Features" }, glue = { "com.amazonStepDefinition" }, tags = { "@chrome", }, monochrome = true)
+	@CucumberOptions(plugin = { "pretty", "html:target/cucumber", "json:target/cucumber-json.json" }, 
+			features = {"src/test/resources/Features" }, 
+			glue = { "com.amazonStepDefinition" }, 
+			tags = { "@chrome", }, monochrome = true)
 
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
 

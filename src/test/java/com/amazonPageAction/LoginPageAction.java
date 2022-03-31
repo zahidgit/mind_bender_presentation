@@ -2,15 +2,15 @@ package com.amazonPageAction;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.support.PageFactory;
-import com.amazonPageElements.AmazonLoginPageElements;
-import com.amazoUtilities.SetupDriver;
+import com.amazonPageElements.LoginPageElements;
+import com.amazonUtilities.SetupDriver;
 
 
-public class AmazonLOginPageAction {
-	AmazonLoginPageElements pageElement;
+public class LoginPageAction {
+	LoginPageElements pageElement;
 	
-	public AmazonLOginPageAction() {
-		pageElement = new AmazonLoginPageElements();
+	public LoginPageAction() {
+		pageElement = new LoginPageElements();
 		PageFactory.initElements(SetupDriver.driver, pageElement);
 	}
 
@@ -25,11 +25,13 @@ public class AmazonLOginPageAction {
 		pageElement.userId.sendKeys(userId);
 	}
 
-	public void clearUserID() {
-		pageElement.userId.clear();
-	}
+	
 	public void clickContinue() {
 		pageElement.clickContinue.click();
+	}
+	public String getWelcomeText() {
+		return pageElement.welcomeLink.getText();
+		
 	}
 
 

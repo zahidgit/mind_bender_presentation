@@ -1,6 +1,11 @@
 package com.amazonStepDefinition;
 
-import com.amazonPageAction.AmazonLOginPageAction;
+import org.openqa.selenium.remote.service.DriverService;
+import org.testng.Assert;
+
+import com.amazonPageAction.LoginPageAction;
+import com.amazonUtilities.SetupDriver;
+import com.github.dockerjava.api.model.Driver;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -8,7 +13,8 @@ import io.cucumber.java.en.When;
 
 public class AmazonLoginStepDef {
 	
-	AmazonLOginPageAction actions = new AmazonLOginPageAction();
+	LoginPageAction actions = new LoginPageAction();
+	SetupDriver drive = new SetupDriver();
 	
 	@Given("user is in amazon login page")
 	public void user_is_in_amazon_login_page() {
@@ -40,10 +46,10 @@ public class AmazonLoginStepDef {
 	    
 	}
 
-	@Then("user able to log-in")
+	@Then("user loged in succesfully")
 	public void user_able_to_log_in() {
-		
-	   
+		Assert.assertEquals(actions.getWelcomeText(), "Hello, Zahid");
+	   //System.out.println(actions.getWelcomeText());
 	}
 
 }

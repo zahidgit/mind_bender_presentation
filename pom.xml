@@ -98,7 +98,7 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
-						<include>**/AmazonLoginRunner.java</include>
+						<include>**/Runner.java</include>
 					</includes>
 					<excludes>
 						<exclude>none</exclude>

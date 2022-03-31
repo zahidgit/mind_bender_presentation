@@ -6,9 +6,9 @@ Feature: Amazon login feature
     Given user is in amazon login page
     When when user enters correct email address "zahid00nyc@gmail.com"
     And user clicks continue
-    And user enters correct password "March2022"
+    And user enters correct password "Simba2012$$"
     And user clicks sign-in
-    Then user able to log-in
+    Then user loged in succesfully 
 
    #@firefox @regression 
    #Scenario Outline:  Verify customer login with correct userid and wrong password

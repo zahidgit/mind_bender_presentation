@@ -1,4 +1,4 @@
-package com.amazoUtilities;
+package com.amazonUtilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
