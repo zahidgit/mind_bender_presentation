@@ -13,35 +13,35 @@ import com.amazonPageElements.AmazonPagetoCartElements;
 
 public class AmazonPagetoCartActions {
 
-	AmazonPagetoCartElements cartElements;                               //instance variable
+	AmazonPagetoCartElements cartElements;                               	// create instance variable
 	
-		public AmazonPagetoCartActions() {								  
-		cartElements = new AmazonPagetoCartElements ();
+		public AmazonPagetoCartActions() {									//create a constructor				  
+		cartElements = new AmazonPagetoCartElements ();						//initialize instance variable
 		PageFactory.initElements(SetupDriver.driver, cartElements);
 		}
 		
-		public void getAmazonLoginPage() {								
+		public void getAmazonLoginPage() {					                //method for driver to get log in page			
 		SetupDriver.driver.get("https://www.amazon.com/");
 		SetupDriver.driver.manage().window().maximize();
 		SetupDriver.driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		}
 		
-		@FindBy (xpath = "//a[@id='nav-cart']")               //find by
-		public WebElement cartPagebttnValidation;
+		@FindBy (xpath = "//a[@id='nav-cart']")              				 //find by xpath for cat button
+				public WebElement cartPagebttnValidation;
 
 		public void cartPageValidation() {
-			System.out.println("Clicking on cart Button");   //method to implement find by element
+			System.out.println("Clicking on cart Button");   				//method to implement action on element
 			cartElements.cartPagebttnValidation.click();
 		}
 
 		public void click() {
-			System.out.println("Clicking Submit Button");
+			System.out.println("Clicking Submit Button");					//action 
 				cartElements.cartPagebttnValidation.click();
 			}
 		
-		public void cartpage() {
+		public void cartpage
+		() {
 			System.out.println("Verifying on Cart Page");
-			SetupDriver.driver.get("https://www.amazon.com/gp/cart/view.html?ref_=nav_cart");	
 			}		
 }
 

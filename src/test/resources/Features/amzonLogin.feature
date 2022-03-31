@@ -1,7 +1,8 @@
+@chrome 
 Feature: Amazon login feature
   This feature will test amazon login features
   
-  @chrome @sanity @regression
+	@chrome @sanity @regression
   Scenario: Verify customer login with valid userid and password
     Given user is in amazon login page
     When when user enters correct email address "zahid00nyc@gmail.com"
