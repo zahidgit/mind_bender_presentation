@@ -9,11 +9,11 @@ import com.amazonPageElements.AmazonLoginPageElements;
 import com.amazoUtilities.SetupDriver;
 
 
-public class AmazonLOginPageAction {
+public class AmazonLoginPageAction {
 	
 	AmazonLoginPageElements pageElement;
 	
-	public AmazonLOginPageAction() {
+	public AmazonLoginPageAction() {
 		pageElement = new AmazonLoginPageElements();
 		PageFactory.initElements(SetupDriver.driver, pageElement);
 	}

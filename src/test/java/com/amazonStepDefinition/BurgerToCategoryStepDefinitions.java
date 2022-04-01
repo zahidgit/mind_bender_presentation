@@ -1,6 +1,6 @@
 package com.amazonStepDefinition;
  
-import com.amazonPageAction.AmazonLOginPageAction;
+import com.amazonPageAction.AmazonLoginPageAction;
 import com.amazonPageAction.BurgerToCategoryActions;
 
 import io.cucumber.java.en.Given;
@@ -13,7 +13,7 @@ public class BurgerToCategoryStepDefinitions {
 	
 	
 	BurgerToCategoryActions BurgerAct = new BurgerToCategoryActions();
-	AmazonLOginPageAction Logobject = new AmazonLOginPageAction();
+	AmazonLoginPageAction Logobject = new AmazonLoginPageAction();
 	
 		@Given("User in Amazon Home page")
 		public void user_in_Amazon_Home_page() {

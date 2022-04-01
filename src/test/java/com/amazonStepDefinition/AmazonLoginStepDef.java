@@ -1,6 +1,6 @@
 package com.amazonStepDefinition;
  
-import com.amazonPageAction.AmazonLOginPageAction;
+import com.amazonPageAction.AmazonLoginPageAction;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 
 public class AmazonLoginStepDef {
 	
-	AmazonLOginPageAction actions = new AmazonLOginPageAction();
+	AmazonLoginPageAction actions = new AmazonLoginPageAction();
 	
 	@Given("user is in amazon login page")
 	public void user_is_in_amazon_login_page() {
